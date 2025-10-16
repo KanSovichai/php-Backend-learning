@@ -28,6 +28,40 @@
     foreach($arrAssociate as $key => $value){
         echo $key.$value."<br>";
     }
+    $array = array(1,2,3,4,5,6,7,8,9,10);
+    //delete the itemin the back of the array
+    array_pop($array);
+    foreach($array as $arr){
+        echo $arr."<br>";
+    }
+    //push an item to the back of the array
+    array_push($array,10);
+    foreach($array as $arr){
+        echo $arr."<br>";
+    }
+    //use the shift to remove the front item
+    array_shift($array);
+    foreach($array as $arr){
+        echo $arr."<br>";
+    }
+    //Use unshift to add from the front
+    array_unshift($array,1);
+    foreach($array as $arr){
+        echo $arr."<br>";
+    }
+    if(in_array(11, $array)){
+        echo "1 is in the array";
+        foreach($array as $arr){
+            echo $arr."<br>";
+        }
+    }
+    else{
+        echo "1 is not in the array";
+        foreach($array as $arr){
+            echo $arr."<br>";
+        }
+    }
+
     ?>
 </body>
 </html>
